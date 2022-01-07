@@ -7,14 +7,14 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [vue()],
     resolve: {
-      extensions: ['.js', 'ts', '.vue', '.json'],
+      extensions: ['.js', '.ts', '.vue', '.json'],
         alias: {
           '@': resolve('src'),
         },
       },
     server: {
       host: '0.0.0.0',
-      port: 9000,
+      port: 8090,
       cors: true,
       proxy: {
         '/xxxx': {
