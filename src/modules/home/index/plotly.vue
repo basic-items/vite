@@ -3,9 +3,10 @@
 </template>
 
 <script setup>
-import { defineProps, getCurrentInstance, onMounted, watch } from 'vue'
+import { getCurrentInstance, onMounted, watch, defineExpose } from 'vue'
 import Plotly from 'plotly.js/dist/plotly'
 const { props } = getCurrentInstance()
+
 defineProps({
   msg: String,
   plotlyData: Array | Object,
@@ -20,12 +21,19 @@ const redraw = () => {
     props.layout
   )
 }
+function PlotlyRestyle (dataSpac, update, traceIndex) {
+  Plotly.restyle(dataSpac, update, traceIndex)
+}
 onMounted(() => {
   redraw()
 })
 
 watch(props.plotlyData, (count, prevCount) => { // 监听特定数据
   redraw()
+})
+
+defineExpose({
+  PlotlyRestyle
 })
 
 </script>

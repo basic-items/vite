@@ -1,6 +1,7 @@
 import { ref, reactive } from 'vue'
 
 export const count = ref(0)
+export const PlotlyRef = ref(null)
 export const layout = reactive({
   title: "My graph",
   width: 700,
@@ -58,4 +59,4 @@ export const plotlyData = reactive([
     marker: { size: 10 }
   }
 ])
-export default { count, layout, plotlyData, plotlyTrainData, plotlyTestData, trainData, testData }
+export default { count, layout, plotlyData, plotlyTrainData, plotlyTestData, trainData, testData, PlotlyRef }
