@@ -1,5 +1,6 @@
 <template>
   <h1>home</h1>
+  <button @click="predict">时间预测 1MB 100MB 10000MB</button>
   <Plotly ref="PlotlyRef" :plotlyData="plotlyData" :layout="layout"></Plotly>
 </template>
 
@@ -9,7 +10,7 @@ import { ref, onMounted, getCurrentInstance } from 'vue'
 import Plotly from './plotly'
 
 import { layout, plotlyData, PlotlyRef } from './variable'
-import { training } from './method'
+import { training, predict } from './method'
 
 onMounted(() => {
   training()

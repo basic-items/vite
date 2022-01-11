@@ -1,9 +1,9 @@
 <template>
-  <div id="Plotly" style="height: 300px;"></div>
+  <div id="Plotly" style="height: 600px;"></div>
 </template>
 
-<script setup>
-import { getCurrentInstance, onMounted, watch, defineExpose } from 'vue'
+<script setup name="Plotly">
+import { getCurrentInstance, onMounted, watch } from 'vue'
 import Plotly from 'plotly.js/dist/plotly'
 const { props } = getCurrentInstance()
 
@@ -21,8 +21,9 @@ const redraw = () => {
     props.layout
   )
 }
-function PlotlyRestyle (dataSpac, update, traceIndex) {
-  Plotly.restyle(dataSpac, update, traceIndex)
+function PlotlyRestyle (update, traceIndex) {
+  console.log('update, traceIndex', update, traceIndex)
+  Plotly.restyle('Plotly', update, traceIndex)
 }
 onMounted(() => {
   redraw()
