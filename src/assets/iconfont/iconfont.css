@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "license"; /* Project id 3577820 */
+  src: url('iconfont.woff2?t=1660201050365') format('woff2'),
+       url('iconfont.woff?t=1660201050365') format('woff'),
+       url('iconfont.ttf?t=1660201050365') format('truetype');
+}
+
+.license {
+  font-family: "license" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gennlife_license_account:before {
+  content: "\e648";
+}
+
+.gennlife_license_password:before {
+  content: "\e649";
+}
+
+.gennlife_license_close:before {
+  content: "\e642";
+}
+
+.gennlife_license_details:before {
+  content: "\e643";
+}
+
+.gennlife_license_search:before {
+  content: "\e644";
+}
+
+.gennlife_license_error:before {
+  content: "\e645";
+}
+
+.gennlife_license_upload:before {
+  content: "\e646";
+}
+
+.gennlife_license_success:before {
+  content: "\e647";
+}
+

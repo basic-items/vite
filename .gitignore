@@ -1,5 +1,10 @@
 node_modules
 .DS_Store
+.vscode
+license
 dist
 dist-ssr
+package-lock.json
+auto-imports.d.ts
+components.d.ts
 *.local

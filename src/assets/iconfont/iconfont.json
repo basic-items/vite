@@ -1,0 +1,65 @@
+{
+  "id": "3577820",
+  "name": "Gennlife-license",
+  "font_family": "license",
+  "css_prefix_text": "gennlife_license_",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "31198069",
+      "name": "account",
+      "font_class": "account",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "31198070",
+      "name": "password",
+      "font_class": "password",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "31145072",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "31145073",
+      "name": "details",
+      "font_class": "details",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "31145074",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "31145075",
+      "name": "error",
+      "font_class": "error",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "31145076",
+      "name": "upload",
+      "font_class": "upload",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "31145077",
+      "name": "success",
+      "font_class": "success",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    }
+  ]
+}
